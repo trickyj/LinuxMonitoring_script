@@ -1,0 +1,48 @@
++ date +%Y-%m-%d %H:%M
++ dt=2024-07-18 22:05
++ rm /home/pagebrake/Documents/monitoring/Data/sample.csv
+rm: cannot remove '/home/pagebrake/Documents/monitoring/Data/sample.csv': No such file or directory
++ rm /home/pagebrake/Documents/monitoring/node1/*
+rm: cannot remove '/home/pagebrake/Documents/monitoring/node1/*': No such file or directory
++ scp -r node1@192.168.1.19:/home/node1/Documents/monitoring/Data/* /home/pagebrake/Documents/monitoring/node1/
+ssh: connect to host 192.168.1.19 port 22: No route to host
+scp: Connection closed
++ echo IP,SERVERNAME,CPUs,CPU SPEED,UPTIME,LOAD AVERAGE,TOTAL MEMORY,USED MEMORY,FREE MEMORY
++ cat /home/pagebrake/Documents/monitoring/Data/aip.txt
++ cat /home/pagebrake/Documents/monitoring/Data/hostname.txt
++ cat /home/pagebrake/Documents/monitoring/Data/acpu.txt
++ cat /home/pagebrake/Documents/monitoring/Data/ascpu.txt
++ cat /home/pagebrake/Documents/monitoring/Data/runtime.txt
++ cat /home/pagebrake/Documents/monitoring/Data/loadavg.txt
++ cat /home/pagebrake/Documents/monitoring/Data/totalmem.txt
++ cat /home/pagebrake/Documents/monitoring/Data/usedmem.txt
++ cat /home/pagebrake/Documents/monitoring/Data/freemem.txt
++ echo 192.168.1.15 172.17.0.1 ,PageBreak2024, 2,0.137,up , 0.31,13Gi,6.6Gi,3.4Gi
++ cat /home/pagebrake/Documents/monitoring/node1/aip.txt
+cat: /home/pagebrake/Documents/monitoring/node1/aip.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/hostname.txt
+cat: /home/pagebrake/Documents/monitoring/node1/hostname.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/acpu.txt
+cat: /home/pagebrake/Documents/monitoring/node1/acpu.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/ascpu.txt
+cat: /home/pagebrake/Documents/monitoring/node1/ascpu.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/runtime.txt
+cat: /home/pagebrake/Documents/monitoring/node1/runtime.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/loadavg.txt
+cat: /home/pagebrake/Documents/monitoring/node1/loadavg.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/totalmem.txt
+cat: /home/pagebrake/Documents/monitoring/node1/totalmem.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/usedmem.txt
+cat: /home/pagebrake/Documents/monitoring/node1/usedmem.txt: No such file or directory
++ cat /home/pagebrake/Documents/monitoring/node1/freemem.txt
+cat: /home/pagebrake/Documents/monitoring/node1/freemem.txt: No such file or directory
++ echo ,,,,,,,,
++ cat /home/pagebrake/Documents/monitoring/Data/sample.csv
++ /home/pagebrake/Documents/monitoring/tablute1.sh -d , -t Vicky's Ubuntu1 Linux Monitoring Data -h Vicky's Ubuntu1 Linux Monitoring Data
++ /usr/sbin/sendmail -t
++ date +%Y-%m-%d %H:%M
++ date +%Y-%m-%d %H:%M
++ cat
++ cat /home/pagebrake/Documents/monitoring/Output/ServerMonitor.html
+sendmail: warning: /etc/postfix/main.cf, line 52: overriding earlier entry: smtp_tls_security_level=may
+postdrop: warning: /etc/postfix/main.cf, line 52: overriding earlier entry: smtp_tls_security_level=may

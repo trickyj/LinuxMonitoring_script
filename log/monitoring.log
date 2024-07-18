@@ -1,0 +1,39 @@
++ cd /home/pagebrake/Documents/monitoring/Data
++ rm /home/pagebrake/Documents/monitoring/Data/SYSDATE.txt /home/pagebrake/Documents/monitoring/Data/acpu.txt /home/pagebrake/Documents/monitoring/Data/aip.txt /home/pagebrake/Documents/monitoring/Data/ascpu.txt /home/pagebrake/Documents/monitoring/Data/freemem.txt /home/pagebrake/Documents/monitoring/Data/hostname.txt /home/pagebrake/Documents/monitoring/Data/loadavg.txt /home/pagebrake/Documents/monitoring/Data/mount.csv /home/pagebrake/Documents/monitoring/Data/runtime.txt /home/pagebrake/Documents/monitoring/Data/sample.csv /home/pagebrake/Documents/monitoring/Data/totalmem.txt /home/pagebrake/Documents/monitoring/Data/ucpu.txt /home/pagebrake/Documents/monitoring/Data/usedmem.txt
++ date --date=0 day ago +%m-%d-%Y %H:%M
++ hostname
++ hostname -I
++ lscpu
++ tail -1
++ head -5
++ ncpu=CPU(s):                               2
++ echo CPU(s): 2
++ awk -F: {print $2}
++ lscpu
++ tail -1
++ head -16
++ scpu=CPU(s) scaling MHz:                   125%
++ echo CPU(s) scaling MHz: 125%
++ awk -F: {print $2/1000}
++ uptime
++ awk -F, {print $1}
++ dayup= 22:00:01 up  7:46
++ echo 22:00:01 up 7:46
++ awk -F  {print $2,$4}
++ uptime
++ awk -Fload average: {print $2}
++ awk -F, {print $1}
++ top
++ head -3
++ tail -1
++ awk {print $2}
++ grep Total
++ free -h -t
++ free -h -t
++ grep Total
++ awk {print $3}
++ free -h -t
++ grep Total
++ awk {print $4}
++ df -kh
++ awk {print $6, $2, $3, $5}
