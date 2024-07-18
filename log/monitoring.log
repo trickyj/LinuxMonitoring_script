@@ -4,21 +4,21 @@
 + hostname
 + hostname -I
 + lscpu
-+ tail -1
 + head -5
++ tail -1
 + ncpu=CPU(s):                               2
 + echo CPU(s): 2
 + awk -F: {print $2}
 + lscpu
-+ tail -1
 + head -16
-+ scpu=CPU(s) scaling MHz:                   125%
-+ echo CPU(s) scaling MHz: 125%
++ tail -1
++ scpu=CPU(s) scaling MHz:                   139%
++ echo CPU(s) scaling MHz: 139%
 + awk -F: {print $2/1000}
-+ uptime
-+ awk -F, {print $1}
-+ dayup= 22:00:01 up  7:46
-+ echo 22:00:01 up 7:46
++ uptime+ 
+awk -F, {print $1}
++ dayup= 00:00:01 up  9:46
++ echo 00:00:01 up 9:46
 + awk -F  {print $2,$4}
 + uptime
 + awk -Fload average: {print $2}
@@ -26,9 +26,9 @@
 + top
 + head -3
 + tail -1
++ + grepfree Total -h
+ -t
 + awk {print $2}
-+ grep Total
-+ free -h -t
 + free -h -t
 + grep Total
 + awk {print $3}

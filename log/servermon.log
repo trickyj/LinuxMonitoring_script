@@ -1,5 +1,5 @@
 + date +%Y-%m-%d %H:%M
-+ dt=2024-07-18 22:05
++ dt=2024-07-19 00:05
 + rm /home/pagebrake/Documents/monitoring/Data/sample.csv
 rm: cannot remove '/home/pagebrake/Documents/monitoring/Data/sample.csv': No such file or directory
 + rm /home/pagebrake/Documents/monitoring/node1/*
@@ -17,7 +17,7 @@ scp: Connection closed
 + cat /home/pagebrake/Documents/monitoring/Data/totalmem.txt
 + cat /home/pagebrake/Documents/monitoring/Data/usedmem.txt
 + cat /home/pagebrake/Documents/monitoring/Data/freemem.txt
-+ echo 192.168.1.15 172.17.0.1 ,PageBreak2024, 2,0.137,up , 0.31,13Gi,6.6Gi,3.4Gi
++ echo 192.168.1.15 172.17.0.1 ,PageBreak2024, 2,0.139,up , 1.34,13Gi,6.7Gi,3.7Gi
 + cat /home/pagebrake/Documents/monitoring/node1/aip.txt
 cat: /home/pagebrake/Documents/monitoring/node1/aip.txt: No such file or directory
 + cat /home/pagebrake/Documents/monitoring/node1/hostname.txt
@@ -43,6 +43,6 @@ cat: /home/pagebrake/Documents/monitoring/node1/freemem.txt: No such file or dir
 + date +%Y-%m-%d %H:%M
 + date +%Y-%m-%d %H:%M
 + cat
-+ cat /home/pagebrake/Documents/monitoring/Output/ServerMonitor.html
-sendmail: warning: /etc/postfix/main.cf, line 52: overriding earlier entry: smtp_tls_security_level=may
++ cat /home/pagebrake/Documents/monitoring/Output/ServerMonitor.htmlsendmail: warning: /etc/postfix/main.cf, line 52: overriding earlier entry: smtp_tls_security_level=may
+
 postdrop: warning: /etc/postfix/main.cf, line 52: overriding earlier entry: smtp_tls_security_level=may
